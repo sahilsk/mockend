@@ -34,9 +34,6 @@
 				"min": "2010-01-01T00:00:00Z",
 				"max": "2020-12-31T23:59:59Z"
 			}
-		},
-		"Comment": {
-
 		}
 
 	},
@@ -47,6 +44,185 @@
 		},
 		"post": {
 			"belongsTo": "Post"
+		}
+
+	},
+	"quote": {
+		"symbol": {
+			"loremWord": {
+				"minLength": 4,
+				"maxLength": 4
+			}
+		},
+		"companyName": {
+			"loremWords": {
+				"minLength": 5,
+				"maxLength": 20
+			}
+		},
+		"ticker": {
+			"loremWord": {
+				"minLength": 5,
+				"maxLength": 10
+			},
+			"last": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"open": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"high": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"low": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"marketCap": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"peRatio": {
+				"int": {
+					"min": 0,
+					"max": 3
+				}
+			},
+			"yield": {
+				"int": {
+					"min": 0,
+					"max": 3
+				}
+			},
+			"prevClose": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"high52week": {
+				"int": {
+					"min": 0,
+					"max": 120
+				}
+			},
+			"low52week": {
+				"int": {
+					"min": 0,
+					"max": 130
+				}
+			}
+
+		}
+	},
+
+	"company": {
+
+		"id": {
+			"loremWord": {
+				"minLength": 5,
+				"maxLength": 20
+			}
+		},
+		"symbol": {
+			"loremWord": {
+				"minLength": 4,
+				"maxLength": 4
+			}
+		},
+
+		"title": {
+			"loremWords": {
+				"minLength": 10,
+				"maxLength": 50
+			}
+		},
+
+		"description": {
+			"loremSentences": {
+				"minLength": 100,
+				"maxLength": 200
+			}
+		},
+
+		"summary": {
+			"loremSentences": {
+				"minLength": 100,
+				"maxLength": 200
+			}
+		},
+
+		"date": {
+			"dateTime": {
+				"min": "2010-01-01T00:00:00Z",
+				"max": "2020-12-31T23:59:59Z"
+			}
+		},
+
+		"link": {
+			"loremSentences": {
+				"minLength": 100,
+				"maxLength": 200
+			}
+		}
+
+
+	},
+
+	"historical": {
+
+		"date": {
+			"min": "2010-01-01T00:00:00Z",
+			"max": "2020-12-31T23:59:59Z"
+		},
+		"open": {
+			"int": {
+				"min": 0,
+				"max": 120
+			}
+		},
+		"high": {
+			"int": {
+				"min": 0,
+				"max": 120
+			}
+		},
+		"low": {
+			"int": {
+				"min": 0,
+				"max": 120
+			}
+		},
+		"close": {
+			"int": {
+				"min": 0,
+				"max": 120
+			}
+		},
+		"volume": {
+			"int": {
+				"min": 0,
+				"max": 500000
+			}
+		},
+		"symbol": {
+			"loremWord": {
+				"minLength": 4,
+				"maxLength": 4
+			}
 		}
 
 	}
