@@ -21,7 +21,10 @@
 	},
 	"Post": {
 		"title": {
-			"string": {}
+			"loremWords": {
+				"minLength": 20,
+				"maxLength": 30
+			}
 		},
 		"body": {
 			"loremSentences": { "minLength": 100, "maxLength": 500 }	
