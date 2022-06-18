@@ -36,12 +36,17 @@
 			}
 		},
 		"Comment": {
-			"body": {
-				"string": {}
-			},
-			"post": {
-				"belongsTo": "Post"
-			}
+
+		}
+
+	},
+
+	"Comment": {
+		"body": {
+			"string": {}
+		},
+		"post": {
+			"belongsTo": "Post"
 		}
 
 	}
