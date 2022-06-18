@@ -23,6 +23,9 @@
 		"title": {
 			"string": {}
 		},
+		"body": {
+			"loremSentences": { "minLength": 100, "maxLength": 500 }	
+		},
 		"createdBy": {
 			"belongsTo": "User"
 		},
@@ -40,10 +43,16 @@
 
 	"Comment": {
 		"body": {
-			"string": {}
+			"loremSentences": { "minLength": 100, "maxLength": 200 }	
 		},
 		"post": {
 			"belongsTo": "Post"
+		},
+		"createdAt": {
+			"dateTime": {
+				"min": "2010-05-01T00:00:00Z",
+				"max": "2020-12-31T23:59:59Z"
+			}
 		}
 
 	}
